@@ -10,6 +10,7 @@
 /**
  * A function to compute the factorial function, n!.
  */
+
 long factorial(int n) {
   long result = 1, i;
   for(i=2; i<=n; i++) {
@@ -31,11 +32,11 @@ int main(int argc, char **argv) {
   double result = 0.0;
 
   //compute sin(x) using a taylor series out to n terms
-
-
-
-
-  printf("sin(%f) = %f\n", x, result);
-
-  return 0;
-}
+  //for loop
+  //i = 0 to n
+  //result += (pow(-1,i) * pow(x,(2*i) + 1)) / factorial((2*i)+1);
+  int i;
+  for(i=0; i<n; i++){
+    result += (pow(-1,i) * pow(x,(2*i) + 1)) / factorial((2*i)+1);
+  }
+    
