@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
   //i = 0 to n
   //result += (pow(-1,i) * pow(x,(2*i) + 1)) / factorial((2*i)+1);
   int i;
-  for(i=0; i<n; i++){
+  for(i=0; i<=n; i++){
     result += (pow(-1,i) * pow(x,(2*i) + 1)) / factorial((2*i)+1);
   }
     
